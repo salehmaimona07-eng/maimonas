@@ -1,0 +1,750 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body & General */
+body.login-page {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/pexels-828860-2566853.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(138, 194, 195, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition:  all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a.active {
+    
+   background-color: white;
+   color:black;
+    box-shadow: 0 0 15px #fff;
+    border-radius: 10px;
+}
+
+/* Login Form Container */
+.login-container {
+    width: 350px;
+    margin: auto;
+    background-color: transparent; 
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #333;
+    text-align: center;
+}
+
+/* Form Elements */
+form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    box-shadow: 0 0 10px #fff;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: #8ac2c3;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #086469;
+    box-shadow: 0 0 15px #fff;
+}
+
+/* Logo */
+.logo {
+    font-size: 35px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color:transparent;
+    color: white;
+    margin-top: auto;
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+/* صفحة Sign Up */
+body.signup-page {
+    font-family: Arial, sans-serif;
+    background-image: url('../images/pexels-828860-2566853.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+/* صندوق النموذج نصف شفاف */
+.signup-container {
+    width: 350px;
+    margin: auto;
+    background-color:tra;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #333;
+    text-align: center;
+}
+
+/* تنسيق الحقول والأزرار */
+form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: #8ac2c3;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #086469;
+}
+body{
+
+  background: linear-gradient(135deg, #86edc9, #086469);
+  color:white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #8ac2c3;
+  position: sticky;
+  top: 0;
+
+}
+
+.nav-bar .logo {
+  color: white;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+} */
+
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #fff;
+  color: #086469;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #8ac2c3;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+}
+/* ------------------------------------------------- */
+/*--------------------------------------------------*/
+/* Reset */
+
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #86edc9, #086469);
+  color: black;
+  min-height: 100vh;
+}
+
+/* Header & Nav */
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(8px);
+}
+
+#main-header .store-name {
+  font-size: 28px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#main-nav ul li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Main Content */
+#main-content {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#products-section {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Product List */
+#product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.product-img:hover {
+    transform: scale(1.05);
+}
+.product-img:active{
+    transform: scale(1.2);
+    transform: transform 0.1s ease;
+}
+
+.product-caption {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+
+.sidebar {
+  /* --- للتحكم بالموقع والحجم --- */
+  display: block;         /* اجعله يتصرف ككتلة قابلة للتوسيط */
+  width: 80%;             /* اجعل عرضه 80% من عرض الصفحة */
+  max-width: 950px;       /* لا تجعله يتجاوز 950 بكسل على الشاشات الكبيرة جداً */
+  margin: 50px auto;      /* السحر هنا: 50px فوق وتحت، و auto يمين ويسار (للتوسيط) */
+
+  /* --- للتحكم بالشكل والتصميم (الخلفية) --- */
+  background-color:#8ac2c3; /* خلفية بلون داكن وشفافية 50% */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حد أبيض شفاف لإبرازه */
+  border-radius: 15px;    /* زوايا دائرية جميلة */
+  padding: 25px;          /* مساحة داخلية مريحة حول النص */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* ظل خفيف لإعطاء عمق */
+
+  /* --- للتحكم بالنص الداخلي --- */
+  text-align: center;     /* توسيط كل النصوص (العنوان والوصف) */
+  color: white;           /* اجعل لون النص أبيض ليكون واضحاً */
+}
+
+/* تنسيق إضافي لعنوان البانر */
+.sidebar h3 {
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* تنسيق إضافي لوصف البانر */
+.sidebar p {
+  margin-bottom: 0;
+  font-size: 18px;
+  opacity: 0.9; /* جعل النص أقل حدة قليلاً */
+}
+  
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  #product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  #product-list {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==== خاص بصفحة About فقط ==== */
+.about-page {
+  background: linear-gradient(135deg, #fdfdfd, #f5f5f5); /* رمادي فاتح ناعم */
+  font-family: sans-serif;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* حاوية المحتوى */
+.about-page .about-container {
+  max-width: 1000px;
+  
+  /* --- هذا هو الحل --- */
+  margin-top: 50px;     /* 1. أضيفي مسافة 50 بكسل من الأعلى فقط */
+  margin-bottom: 50px;  /* 2. أضيفي مسافة 50 بكسل من الأسفل (قبل الفوتر) */
+  margin-left: auto;    /* 3. اتركي التوسيط الأفقي كما هو */
+  margin-right: auto;   /* 4. اتركي التوسيط الأفقي كما هو */
+
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: auto;
+}
+
+/* العناوين */
+.about-page h2, 
+.about-page h3 {
+  color: #086469; /* نفس لون الهوية البصرية للموقع */
+  margin-bottom: 1rem;
+}
+
+/* النص */
+.about-page p, 
+.about-page blockquote {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+}
+
+/* الفريق */
+.about-page .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-page .team-member {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.about-page .team-member:hover {
+  transform: translateY(-5px);
+}
+
+.about-page .team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #086469;
+}
+
+الفوتر بس للـ about
+.about-page footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #086469;
+  text-align: center;
+    color: white;
+    margin-top: auto;
+}
+/* =================================
+   Social Media Links Styling
+   ================================= */
+
+/* 1. النمط الأساسي للروابط */
+.social-links a {
+  color: white; /* اللون الافتراضي للرابط (أبيض) */
+  text-decoration: none; /* إزالة الخط الذي يظهر تحت الرابط */
+  font-size: 16px;
+  padding: 5px 10px; /* إضافة مساحة حول النص لسهولة الضغط */
+  border-radius: 5px; /* زوايا دائرية خفيفة */
+  transition: all 0.2s ease-in-out; /* حركة ناعمة عند تغير اللون */
+}
+
+/* 2. النمط عند مرور الماوس فوق الرابط (Hover) */
+.social-links a:hover {
+  color: #141c19; /* تغيير اللون إلى الأخضر الفاتح (لون الهوية البصرية) */
+  text-decoration: underline; /* إضافة خط سفلي عند المرور */
+}
+
+/* 3. النمط عند الضغط الفعلي على الرابط (Active) - هذا هو طلبك الرئيسي */
+.social-links a:active {
+  color:white; /* تغيير اللون إلى رمادي فاتح جداً في لحظة الضغط */
+ /* إضافة خلفية داكنة وشفافة في لحظة الضغط */
+  transform: scale(0.95); /* جعل الرابط يصغر قليلاً عند الضغط لإعطاء إحساس بالعمق */
+}
+/* =================================
+   Shopping Cart Page Styling
+   ================================= */
+
+/* 1. تطبيق نفس حل الفوتر اللاصق على صفحة السلة */
+/* .cart-page { */
+  /* --- خصائص Flexbox لتثبيت الفوتر --- */
+  /* min-height: 100vh;
+  display: flex;
+  flex-direction: column; */
+  
+  
+
+  /* --- يمكنكِ إضافة خلفية مختلفة إذا أردتِ --- */
+  /* background: #f4f7f6; */
+  /* color: #333; */
+/* } */
+
+
+/* 2. توسيط حاوية سلة التسوق في منتصف الصفحة */
+.cart-container {
+  width: 90%;             /* اجعل عرض الحاوية 90% من الصفحة */
+  max-width: 960px;       /* لا تجعلها تتجاوز 960 بكسل على الشاشات الكبيرة */
+  margin:  auto;      /* السحر هنا: 60px فوق وتحت، و auto يمين ويسار (للتوسيط) */
+  padding: 30px;          /* مساحة داخلية مريحة */
+  background-color: white;/* خلفية بيضاء أنيقة للجدول */
+  border-radius: 15px;    /* زوايا دائرية */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ظل ناعم */
+  color: #333;            /* لون نص داكن لسهولة القراءة */
+}
+
+/* 3. تحسين تصميم العنوان الرئيسي */
+.cart-container h2 {
+  text-align: center;     /* توسيط عنوان "Your Shopping Cart" */
+  color: #086469;         /* استخدام لون الهوية البصرية */
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* 4. تحسين تصميم الجدول */
+#cart-table {
+  width: 100%;            /* اجعل الجدول يملأ الحاوية البيضاء */
+  border-collapse: collapse; /* إزالة المسافات المزدوجة بين حدود الخلايا */
+  margin-bottom: auto;
+
+}
+
+#cart-table th, 
+#cart-table td {
+  text-align: left;       /* محاذاة النص لليسار داخل الخلايا */
+  padding: 12px 15px;     /* إضافة مساحة داخلية للخلايا */
+  border-bottom: 1px solid #ddd; /* خط أفقي رمادي فاتح بين الصفوف */
+}
+
+#cart-table th {
+  background-color: #f8f8f8; /* خلفية رمادية فاتحة لخلايا العناوين */
+  font-weight: bold;
+}
+
+/* 5. تحسين حقل الكمية */
+.qty {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 6. تحسين عرض الإجمالي النهائي */
+#grand-total {
+  text-align: right;      /* محاذاة نص الإجمالي النهائي لليمين */
+  font-size: 20px;
+  font-weight: bold;
+  color: #086469;
+}
+/* Contact Page Styles - Matching the main site theme */
+/* الخلفية نفس login */
+body.contact-page {
+  background: url("../images/pexels-828860-2566853.jpg") no-repeat center center/cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* صندوق بنفس ستايل login */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.contact-box {
+    width: 350px;
+    margin: auto;
+    background-color:tra;
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #333;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.contact-box h2,
+.contact-box h3 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.contact-box label {
+  display: block;
+  text-align: left;
+  margin: 8px 0 4px;
+  color: #fff;
+ 
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.contact-box button {
+  background: #8ac2c3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-box button:hover {
+  background: #086469;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-container {
+    padding: 15px;
+  }
+
+  #cart-table th, #cart-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-box {
+    width: 90%;
+    margin-top: 50px;
+  }
+}
+video{
+  display: block;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
